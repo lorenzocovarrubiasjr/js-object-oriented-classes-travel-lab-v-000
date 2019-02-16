@@ -42,10 +42,10 @@ class Driver {
 
   estimatedTime(peak = false){
     if (peak === true) {
-      return this.blocksTravelled() % 3
+      return Math.round(this.blocksTravelled() / 3)
     }
     else {
-      return this.blocksTravelled() % 2
+      return Math.round(this.blocksTravelled() / 2)
     }
   }
 
