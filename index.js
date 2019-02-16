@@ -34,8 +34,8 @@ class Driver {
       '5th Avenue'
       ];
 
-    total += Math.abs(this.beginningLocation[vertical] - this.endingLocation[vertical]);
-    total += Math.abs((eastWest.indexOf(this.beginningLocation[horizontal]) + 1) - (eastWest.indexOf(this.beginningLocation[horizontal]) + 1));
+    total += Math.abs(this.beginningLocation['vertical'] - this.endingLocation['vertical']);
+    total += Math.abs((eastWest.indexOf(this.beginningLocation['horizontal']) + 1) - (eastWest.indexOf(this.beginningLocation['horizontal']) + 1));
 
     return total;
   }
